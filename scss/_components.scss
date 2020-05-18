@@ -1,4 +1,4 @@
-.hamburger {
+.hamburgur {
   width: 32px;
   height: 22px;
   cursor: pointer;
@@ -8,4 +8,12 @@
     height: 3px;
     background-color: $c-primary;
   }
+}
+
+.btn-orange {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
 }

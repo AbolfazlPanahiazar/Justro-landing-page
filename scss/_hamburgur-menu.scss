@@ -1,0 +1,29 @@
+.hamburgur-menu {
+    background-color: rgba($c-primary, $alpha: 0.5);
+    position: fixed;
+    top: -300px;
+
+    &-link {
+        color: $c-tertiary;
+    }
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba($c-primary, $alpha: 0.5);
+    position: fixed;
+    top: -180px;
+    
+    input {
+        width: 80%;
+        font-size: 25px;
+        direction: rtl;
+        border: none;
+
+        &::placeholder {
+            color: rgba($c-tertiary, $alpha: 0.3);
+        }
+    }
+}

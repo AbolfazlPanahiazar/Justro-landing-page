@@ -2,15 +2,23 @@
   font-family: "Shabnam";
   src: url(../fonts/Shabnam-Bold.ttf) format("ttf"), url(../fonts/Shabnam-Bold.woff) format("woff");
 }
-.hamburger {
+.hamburgur {
   width: 32px;
   height: 22px;
   cursor: pointer;
 }
-.hamburger-line {
+.hamburgur-line {
   margin: 7px;
   height: 3px;
   background-color: #00a680;
+}
+
+.btn-orange {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
 }
 
 * {
@@ -31,7 +39,7 @@
   direction: rtl;
   position: relative;
 }
-.navbar .hamburger {
+.navbar .hamburgur {
   margin-right: 25px;
 }
 .navbar .title {
@@ -44,6 +52,33 @@
   color: #00a680;
   font-size: 24px;
   margin-left: 23px;
+}
+
+.hamburgur-menu {
+  background-color: rgba(0, 166, 128, 0.5);
+  position: fixed;
+  top: -300px;
+}
+.hamburgur-menu-link {
+  color: #333333;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 166, 128, 0.5);
+  position: fixed;
+  top: -180px;
+}
+.search-box input {
+  width: 80%;
+  font-size: 25px;
+  direction: rtl;
+  border: none;
+}
+.search-box input::placeholder {
+  color: rgba(51, 51, 51, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
