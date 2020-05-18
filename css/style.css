@@ -23,22 +23,15 @@
   background-image: linear-gradient(to top, #e35325, #ff8a65);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .container-fluid {
-  padding: 0;
   font-family: "Shabnam", sans-serif;
 }
 
-.nav-row {
+.nav-row1 {
   display: flex;
   justify-content: flex-end;
 }
-
-.navbar {
+.nav-row1 .navbar {
   height: 80px;
   background-color: #ffffff;
   box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
@@ -46,22 +39,21 @@
   direction: rtl;
   position: relative;
 }
-.navbar .hamburgur {
-  margin-right: 25px;
+.nav-row1 .navbar .hamburgur {
+  margin-right: 10px;
 }
-.navbar .title {
+.nav-row1 .navbar .title {
   font-size: 24px;
   color: #00a680;
   position: absolute;
   right: 95px;
 }
-.navbar .search {
+.nav-row1 .navbar .search {
   color: #00a680;
   font-size: 24px;
   margin-left: 23px;
 }
-
-.logo {
+.nav-row1 .logo {
   width: 237px;
   height: 192px;
   background-image: url(../images/009_logo_Bg.svg);
@@ -73,16 +65,16 @@
   justify-content: center;
   align-items: center;
 }
-.logo .icon {
+.nav-row1 .logo .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 16%;
 }
-.logo .icon img {
+.nav-row1 .logo .icon img {
   width: 72px;
 }
-.logo .title {
+.nav-row1 .logo .title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +133,45 @@
 
 .hamburgur-checkbox:checked ~ .hamburgur .menu-line-3 {
   transform: rotateZ(40deg);
+}
+
+.nav-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+.nav-row2 .logo {
+  width: 406px;
+  height: 219px;
+  background-image: url(../images/009_logo_Bg.svg);
+  background-position: bottom left;
+  background-size: cover;
+  direction: rtl;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 36px;
+}
+.nav-row2 .logo .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16%;
+  padding-top: 21px;
+}
+.nav-row2 .logo .icon img {
+  width: 72px;
+}
+.nav-row2 .logo .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #00a680;
+  margin-right: 3%;
+  padding-top: 46px;
 }
 
 /*# sourceMappingURL=style.css.map */
