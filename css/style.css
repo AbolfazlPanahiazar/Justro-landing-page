@@ -23,6 +23,9 @@
   background-image: linear-gradient(to top, #e35325, #ff8a65);
 }
 
+.carousel-item {
+  transition: all 0.5s;
+}
 .carousel-item .texts .title {
   color: #00a680;
   font-size: 30px;
@@ -34,15 +37,28 @@
 .carousel-item .texts .paragraph {
   font-size: 16px;
 }
-.carousel-item .image {
+.carousel-item .image1 {
   height: 350px;
   background-image: url(../images/slide1.png);
+  background-size: cover;
+  background-position: top center;
+}
+.carousel-item .image2 {
+  height: 350px;
+  background-image: url(../images/slide2.png);
+  background-size: cover;
+  background-position: top center;
+}
+.carousel-item .image3 {
+  height: 350px;
+  background-image: url(../images/slide3.png);
   background-size: cover;
   background-position: top center;
 }
 
 .carousel-indicators {
   display: flex;
+  align-items: center;
 }
 .carousel-indicators li {
   padding: 0;
@@ -51,8 +67,10 @@
   height: 12px;
   border-radius: 50%;
   background-color: #bdbdbd;
+  transition: all 0.35s;
 }
 .carousel-indicators li.active {
+  border: none;
   width: 24px;
   height: 12px;
   padding: 0;
@@ -120,6 +138,10 @@
   font-size: 24px;
   color: #00a680;
   margin-right: 3%;
+}
+
+.carousel {
+  height: 600px;
 }
 
 .hamburgur-menu {

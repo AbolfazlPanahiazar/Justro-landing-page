@@ -14,3 +14,8 @@ $shabnam: "Shabnam", sans-serif;
   justify-content: center;
   align-items: center;
 }
+
+@mixin back-img {
+  background-size: cover;
+  background-position: top center;
+}

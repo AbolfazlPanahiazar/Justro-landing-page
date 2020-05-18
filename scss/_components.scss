@@ -21,6 +21,8 @@
 }
 
 .carousel-item {
+  transition: all 0.5s;
+
   .texts {
     .title {
       color: $c-primary;
@@ -37,17 +39,29 @@
     }
   }
 
-  .image {
+  .image1 {
     height: 350px;
     background-image: url(../images/slide1.png);
-    background-size: cover;
-    background-position: top center;
+    @include back-img;
+  }
+
+  .image2 {
+    height: 350px;
+    background-image: url(../images/slide2.png);
+    @include back-img;
+  }
+
+  .image3 {
+    height: 350px;
+    background-image: url(../images/slide3.png);
+    @include back-img;
   }
 }
 
 .carousel-indicators {
   display: flex;
-  
+  align-items: center;
+
   li {
     padding: 0;
     margin: 8px;
@@ -55,8 +69,10 @@
     height: 12px;
     border-radius: 50%;
     background-color: #bdbdbd;
+    transition: all 0.35s;
 
     &.active {
+      border: none;
       width: 24px;
       height: 12px;
       padding: 0;
