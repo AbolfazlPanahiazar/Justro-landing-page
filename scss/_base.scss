@@ -8,3 +8,9 @@ $shabnam: "Shabnam", sans-serif;
   font-family: "Shabnam";
   src: url(../fonts/Shabnam-Bold.ttf) format("ttf"), url(../fonts/Shabnam-Bold.woff) format("woff");
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

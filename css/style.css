@@ -33,6 +33,11 @@
   font-family: "Shabnam", sans-serif;
 }
 
+.nav-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .navbar {
   height: 80px;
   background-color: #ffffff;
@@ -56,11 +61,41 @@
   margin-left: 23px;
 }
 
+.logo {
+  width: 237px;
+  height: 192px;
+  background-image: url(../images/009_logo_Bg.svg);
+  background-position: bottom left;
+  background-size: cover;
+  direction: rtl;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16%;
+}
+.logo .icon img {
+  width: 72px;
+}
+.logo .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #00a680;
+  margin-right: 3%;
+}
+
 .hamburgur-menu {
   background-color: rgba(0, 166, 128, 0.5);
   position: fixed;
   top: 80px;
-  right: -100vw;
+  right: -120vw;
   transition: right ease-in-out 0.3s;
 }
 .hamburgur-menu-link {
