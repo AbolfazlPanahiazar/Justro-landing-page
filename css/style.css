@@ -167,23 +167,36 @@
   margin-right: 3%;
 }
 
-.carousel {
+.car1 {
   min-height: 600px;
 }
 @media (min-width: 450px) {
-  .carousel {
+  .car1 {
     height: 630px;
   }
 }
 @media (min-width: 550px) {
-  .carousel {
+  .car1 {
     height: 700px;
   }
 }
 @media (min-width: 650px) {
-  .carousel {
+  .car1 {
     height: 750px;
   }
+}
+
+.car2 {
+  min-height: 490px;
+  margin-bottom: 80px;
+}
+
+.main-wave {
+  height: 200px;
+  background-image: url(../images/011_bg_wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .hamburgur-menu {

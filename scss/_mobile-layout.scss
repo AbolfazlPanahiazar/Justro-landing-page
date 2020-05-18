@@ -62,7 +62,7 @@
 }
 
 // carousel
-.carousel {
+.car1 {
   min-height: 600px;
 
   @media (min-width: 450px) {
@@ -74,4 +74,19 @@
   @media (min-width: 650px) {
     height: 750px;
   }
+}
+
+.car2 {
+  min-height: 490px;
+  margin-bottom: 80px;
+}
+
+// main wave
+.main-wave {
+  height: 200px;
+  background-image: url(../images/011_bg_wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+
 }
