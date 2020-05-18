@@ -61,7 +61,17 @@
   }
 }
 
-// carousel 
+// carousel
 .carousel {
-  height: 600px;
+  min-height: 600px;
+
+  @media (min-width: 450px) {
+    height: 630px;
+  }
+  @media (min-width: 550px) {
+    height: 700px;
+  }
+  @media (min-width: 650px) {
+    height: 750px;
+  }
 }

@@ -22,6 +22,7 @@
 
 .carousel-item {
   transition: all 0.5s;
+  direction: rtl;
 
   .texts {
     .title {
@@ -39,20 +40,38 @@
     }
   }
 
-  .image1 {
+  .image {
     height: 350px;
+    max-width: 838px;
+
+    @media (max-width: 359px) {
+      height: 320px;
+    }
+    @media (min-width: 450px) {
+      height: 400px;
+    }
+    @media (min-width: 550px) {
+    height: 500px;
+    }
+    @media (min-width: 650px) {
+      height:550px;
+    }
+    @media (min-width: 768px) {
+      height:400px;
+    }
+  }
+
+  .image1 {
     background-image: url(../images/slide1.png);
     @include back-img;
   }
 
   .image2 {
-    height: 350px;
     background-image: url(../images/slide2.png);
     @include back-img;
   }
 
   .image3 {
-    height: 350px;
     background-image: url(../images/slide3.png);
     @include back-img;
   }
