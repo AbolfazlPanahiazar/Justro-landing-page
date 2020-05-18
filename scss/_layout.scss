@@ -5,4 +5,31 @@
 
 .container-fluid {
   padding: 0;
+  font-family: $shabnam;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
+  z-index: 2;
+  direction: rtl;
+  position: relative;
+
+  .hamburger {
+    margin-right: 25px;
+  }
+
+  .title {
+      font-size: 24px;
+      color: $c-primary;
+      position: absolute;
+      right: 95px;
+  }
+
+  .search {
+    color: $c-primary;
+    font-size: 24px;
+    margin-left: 23px;
+  }
 }

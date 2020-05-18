@@ -1,0 +1,10 @@
+$c-primary: #00a680;
+$c-secondary: #cdfff4;
+$c-tertiary: #333333;
+
+$shabnam: "Shabnam", sans-serif;
+
+@font-face {
+  font-family: "Shabnam";
+  src: url(../fonts/Shabnam-Bold.ttf) format("ttf"), url(../fonts/Shabnam-Bold.woff) format("woff");
+}

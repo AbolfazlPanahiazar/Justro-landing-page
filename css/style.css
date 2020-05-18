@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Shabnam";
+  src: url(../fonts/Shabnam-Bold.ttf) format("ttf"), url(../fonts/Shabnam-Bold.woff) format("woff");
+}
+.hamburger {
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+}
+.hamburger-line {
+  margin: 7px;
+  height: 3px;
+  background-color: #00a680;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +20,30 @@
 
 .container-fluid {
   padding: 0;
+  font-family: "Shabnam", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
+  z-index: 2;
+  direction: rtl;
+  position: relative;
+}
+.navbar .hamburger {
+  margin-right: 25px;
+}
+.navbar .title {
+  font-size: 24px;
+  color: #00a680;
+  position: absolute;
+  right: 95px;
+}
+.navbar .search {
+  color: #00a680;
+  font-size: 24px;
+  margin-left: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */

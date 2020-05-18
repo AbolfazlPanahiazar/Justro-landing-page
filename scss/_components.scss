@@ -1,0 +1,11 @@
+.hamburger {
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+
+  &-line {
+    margin: 7px;
+    height: 3px;
+    background-color: $c-primary;
+  }
+}
