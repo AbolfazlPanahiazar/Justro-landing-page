@@ -1,7 +1,7 @@
 .hamburgur-menu {
     background-color: rgba($c-primary, $alpha: 0.5);
     position: fixed;
-    top: -300px;
+    top: 80px;
 
     &-link {
         color: $c-tertiary;
@@ -14,7 +14,7 @@
     border-radius: 5px;
     background-color: rgba($c-primary, $alpha: 0.5);
     position: fixed;
-    top: -180px;
+    top: 80px;
     
     input {
         width: 80%;
@@ -26,4 +26,12 @@
             color: rgba($c-tertiary, $alpha: 0.3);
         }
     }
+}
+
+.hamburgur-checkbox:checked ~ .hamburgur-menu {
+    top: -350px;
+}
+
+.search-checkbox:checked ~ .search-box {
+    top: -350px;
 }

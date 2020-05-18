@@ -57,7 +57,7 @@
 .hamburgur-menu {
   background-color: rgba(0, 166, 128, 0.5);
   position: fixed;
-  top: -300px;
+  top: 80px;
 }
 .hamburgur-menu-link {
   color: #333333;
@@ -69,7 +69,7 @@
   border-radius: 5px;
   background-color: rgba(0, 166, 128, 0.5);
   position: fixed;
-  top: -180px;
+  top: 80px;
 }
 .search-box input {
   width: 80%;
@@ -79,6 +79,14 @@
 }
 .search-box input::placeholder {
   color: rgba(51, 51, 51, 0.3);
+}
+
+.hamburgur-checkbox:checked ~ .hamburgur-menu {
+  top: -350px;
+}
+
+.search-checkbox:checked ~ .search-box {
+  top: -350px;
 }
 
 /*# sourceMappingURL=style.css.map */
