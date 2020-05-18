@@ -23,6 +23,44 @@
   background-image: linear-gradient(to top, #e35325, #ff8a65);
 }
 
+.carousel-item .texts .title {
+  color: #00a680;
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.carousel-item .texts .title .better {
+  border-bottom: 3px solid #00a680;
+}
+.carousel-item .texts .paragraph {
+  font-size: 16px;
+}
+.carousel-item .image {
+  height: 350px;
+  background-image: url(../images/slide1.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.carousel-indicators {
+  display: flex;
+}
+.carousel-indicators li {
+  padding: 0;
+  margin: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bdbdbd;
+}
+.carousel-indicators li.active {
+  width: 24px;
+  height: 12px;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+}
+
 .container-fluid {
   font-family: "Shabnam", sans-serif;
   padding-left: 0;
@@ -143,6 +181,7 @@
   background-image: url(../images/010_header_wave.png);
   background-repeat: no-repeat;
   background-size: 20%;
+  justify-content: center;
 }
 .nav-row2 .logo {
   width: 406px;
@@ -193,14 +232,19 @@
   font-size: 16px;
   color: #333333;
 }
-@media (max-width: 1042px) {
+@media (max-width: 1050px) {
   .nav-row2 nav .menu-link {
     font-size: 10px;
   }
 }
-@media (max-width: 842px) {
+@media (max-width: 846px) {
   .nav-row2 nav .menu-link {
     font-size: 8px;
+  }
+}
+@media (max-width: 774px) {
+  .nav-row2 nav .menu-link {
+    font-size: 7px;
   }
 }
 .nav-row2 nav button {
