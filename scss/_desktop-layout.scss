@@ -1,6 +1,10 @@
 .nav-row2 {
-  @include flex-center;
+  width: 100vw;
+  display: flex;
   direction: rtl;
+  background-image: url(../images/010_header_wave.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
 
   .logo {
     width: 406px;
@@ -17,9 +21,7 @@
 
     .icon {
       @include flex-center;
-      margin-right: 16%;
-      
-    padding-top: 21px;
+      padding-top: 21px;
 
       img {
         width: 72px;
@@ -31,7 +33,46 @@
       font-size: 24px;
       color: $c-primary;
       margin-right: 3%;
-    padding-top: 46px;
+      padding-top: 46px;
     }
+  }
+
+  nav {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+
+    .menu {
+      margin-top: 25px;
+      display: flex;
+      font-size: 16px;
+
+      &-item {
+        text-align: center;
+        line-height: -111px;
+      }
+
+      &-link {
+        font-size: 16px;
+        color: $c-tertiary;
+
+        @media (max-width: 1042px) {
+          font-size: 10px;
+        }
+
+        @media (max-width: 842px) {
+          font-size: 8px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 37px;
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 }
