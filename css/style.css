@@ -199,6 +199,41 @@
   background-position: bottom center;
 }
 
+.ad-section {
+  height: 400px;
+}
+.ad-section .circles {
+  direction: rtl;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+.ad-section .circles .circle {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  min-width: 72px;
+  height: 72px;
+  margin: 8px;
+  border: 1px solid #00a680;
+  border-radius: 50%;
+  color: #00a680;
+}
+.ad-section .circles .circle.icon-icon_fly {
+  background: linear-gradient(to top, #f46739, #ff9f81);
+  color: white;
+  border: none;
+}
+.ad-section .phone {
+  height: 100px;
+  background-color: green;
+}
+.ad-section .texts {
+  height: 100px;
+  background-color: yellow;
+}
+
 .hamburgur-menu {
   background-color: rgba(0, 166, 128, 0.5);
   position: fixed;

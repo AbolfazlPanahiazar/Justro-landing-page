@@ -88,5 +88,46 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+}
 
+// ads section
+.ad-section {
+  height: 400px;
+  // background-color: red;
+
+  .circles {
+    direction: rtl;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0 20px;
+
+    .circle {
+      display: inline-block;
+      text-align: center;
+      padding: 15px;
+      font-size: 40px;
+      min-width: 72px;
+      height: 72px;
+      margin: 8px;
+      border: 1px solid $c-primary;
+      border-radius: 50%;
+      color: $c-primary;
+
+      &.icon-icon_fly {
+        background: linear-gradient(to top, #f46739, #ff9f81);
+        color: white;
+        border: none;
+      }
+    }
+  }
+
+  .phone {
+    height: 100px;
+    background-color: green;
+  }
+
+  .texts {
+    height: 100px;
+    background-color: yellow;
+  }
 }
