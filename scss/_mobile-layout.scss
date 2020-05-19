@@ -96,10 +96,12 @@
   // background-color: red;
 
   .circles {
+    height: 95px;
     direction: rtl;
     overflow: auto;
     white-space: nowrap;
     padding: 0 20px;
+    margin: 0 auto;
 
     .circle {
       display: inline-block;
@@ -122,8 +124,9 @@
   }
 
   .phone {
-    height: 100px;
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
   }
 
   .texts {

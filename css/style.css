@@ -203,10 +203,12 @@
   height: 400px;
 }
 .ad-section .circles {
+  height: 95px;
   direction: rtl;
   overflow: auto;
   white-space: nowrap;
   padding: 0 20px;
+  margin: 0 auto;
 }
 .ad-section .circles .circle {
   display: inline-block;
@@ -226,8 +228,9 @@
   border: none;
 }
 .ad-section .phone {
-  height: 100px;
-  background-color: green;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 .ad-section .texts {
   height: 100px;
