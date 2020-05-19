@@ -92,8 +92,15 @@
 
 // ads section
 .ad-section {
-  height: 400px;
-  // background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .circles {
     height: 95px;
@@ -102,6 +109,20 @@
     white-space: nowrap;
     padding: 0 20px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      height: auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/aaaa.png);
+      background-size: contain;
+      background-position: center center;
+    }
 
     .circle {
       display: inline-block;
@@ -114,10 +135,17 @@
       border: 1px solid $c-primary;
       border-radius: 50%;
       color: $c-primary;
+      position: relative;
+      background-color: #ffffff;
+
+      @media (min-width: 768px) {
+        display: block;
+        margin: 20px auto;
+      }
 
       &.icon-icon_fly {
         background: linear-gradient(to top, #f46739, #ff9f81);
-        color: white;
+        color: #ffffff;
         border: none;
       }
     }
@@ -126,11 +154,35 @@
   .phone {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
+    @media (min-width: 1200px) {
+      img {
+        width: 350px;
+      }
+    }
   }
 
   .texts {
-    height: 100px;
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    direction: rtl;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      height: 550px;
+    }
+
+    .title {
+      color: $c-primary;
+      font-size: 28px;
+    }
+
+    .paragraph {
+      text-align: justify;
+      margin-top: 25px;
+    }
   }
 }
