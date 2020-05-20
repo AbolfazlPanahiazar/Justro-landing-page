@@ -478,6 +478,26 @@
   max-width: 900px;
 }
 
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+.gallery .wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 30px;
+  direction: rtl;
+  max-width: 1200px;
+}
+.gallery .wrapper .g-item {
+  display: inline-block;
+  text-align: center;
+  width: 210px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 6px;
+}
+
 .hamburgur-menu {
   background-color: rgba(0, 166, 128, 0.5);
   position: fixed;
