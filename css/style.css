@@ -496,6 +496,42 @@
   height: 150px;
   border-radius: 10px;
   margin: 6px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+}
+.gallery .wrapper .g-item:hover .sub-text {
+  bottom: 0;
+}
+.gallery .wrapper .g-item .sub-text {
+  font-size: 18px;
+  opacity: 0.6;
+  background-color: #000000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  transition: all 0.3s;
+}
+.gallery .wrapper .g-item-1 {
+  background-image: url(../images/book.jpg);
+}
+.gallery .wrapper .g-item-2 {
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+}
+.gallery .wrapper .g-item-3 {
+  background-image: url(../images/history.jpg);
+}
+.gallery .wrapper .g-item-4 {
+  background-image: url(../images/mosque.jpg);
+}
+.gallery .wrapper .g-item-5 {
+  background-image: url(../images/pool.jpg);
 }
 
 .hamburgur-menu {
