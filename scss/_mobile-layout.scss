@@ -109,8 +109,11 @@
     white-space: nowrap;
     padding: 0 20px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+
+    @media (min-width: 580px) {
+      display: flex;
+      justify-content: center;
+    }
 
     @media (min-width: 768px) {
       height: auto;
@@ -183,6 +186,91 @@
     .paragraph {
       text-align: justify;
       margin-top: 25px;
+    }
+  }
+}
+
+// download section
+.download {
+  height: 100px;
+  // background-color: red;
+
+  .wrapper {
+    width: 90%;
+    box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-top: 70px;
+
+    
+
+    .dl {
+      width: 100px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-size: 24px;
+        color: $c-primary;
+        margin: 18px;
+      }
+
+      .text {
+        line-height: 1.5;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .form {
+        margin: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+          width: 290px;
+          height: 50px;
+          border-radius: 25px;
+          border: solid 1px #eeeeee;
+          background-color: #fafafa;
+          font-size: 24px;
+          color: #616161;
+          padding: 10px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          width: 140px;
+          height: 50px;
+          border-radius: 25px;
+          margin-top: 21px;
+        }
+      }
+    }
+
+    .dl-ways {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .text {
+        line-height: 1.5;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      button {
+        margin: 15px;
+      }
     }
   }
 }

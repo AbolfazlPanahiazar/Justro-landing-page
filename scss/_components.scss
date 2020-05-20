@@ -20,6 +20,14 @@
   background-image: linear-gradient(to top, #e35325, #ff8a65);
 }
 
+.btn-green {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+}
+
 .carousel-item {
   transition: all 0.5s;
   direction: rtl;
@@ -51,13 +59,13 @@
       height: 400px;
     }
     @media (min-width: 550px) {
-    height: 500px;
+      height: 500px;
     }
     @media (min-width: 650px) {
-      height:550px;
+      height: 550px;
     }
     @media (min-width: 768px) {
-      height:400px;
+      height: 400px;
     }
   }
 
