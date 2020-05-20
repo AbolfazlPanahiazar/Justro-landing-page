@@ -192,8 +192,12 @@
 
 // download section
 .download {
-  height: 100px;
-  // background-color: red;
+
+  @media (min-width: 850px) {
+    background-image: url(../images/019_dlbox_Bg.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
 
   .wrapper {
     width: 90%;
@@ -204,10 +208,25 @@
     padding: 30px;
     margin-top: 70px;
 
-    
+    @media (min-width: 850px) {
+      height: 300px;
+      flex-direction: row-reverse;
+      justify-content: center;
+      position: relative;
+    }
+
+    @media (min-width: 1170px) {
+      width: 1170px;
+    }
 
     .dl {
       width: 100px;
+
+      @media (min-width: 850px) {
+        position: absolute;
+        right: 60px;
+        top: 75px;
+      }
     }
 
     .contact {
@@ -215,6 +234,9 @@
       flex-direction: column;
       align-items: center;
 
+      @media (min-width: 850px) {
+        align-self: center;
+      }
       .title {
         font-size: 24px;
         color: $c-primary;
@@ -228,10 +250,14 @@
       }
 
       .form {
-        margin: 24px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (min-width: 850px) {
+          display: block;
+          direction: rtl;
+        }
 
         input {
           width: 290px;
@@ -242,34 +268,43 @@
           font-size: 24px;
           color: #616161;
           padding: 10px;
+          margin-top: 24px;
 
           &:focus {
             outline: none;
           }
         }
 
-        button {
+        .btn-orange {
           width: 140px;
           height: 50px;
           border-radius: 25px;
           margin-top: 21px;
+          margin-bottom: 40px;
+
+          @media (min-width: 850px) {
+            position: relative;
+            right: -55px;
+            top: 9px;
+          }
         }
-      }
-    }
 
-    .dl-ways {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .text {
-        line-height: 1.5;
-        font-size: 16px;
-        text-align: center;
+        
       }
 
-      button {
-        margin: 15px;
+      .greens {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 850px) {
+          flex-direction: row;
+          position: relative;
+          bottom: -33px;
+        }
+
+        .btn-green {
+          margin: 15px;
+        }
       }
     }
   }

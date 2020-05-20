@@ -304,8 +304,12 @@
   margin-top: 25px;
 }
 
-.download {
-  height: 100px;
+@media (min-width: 850px) {
+  .download {
+    background-image: url(../images/019_dlbox_Bg.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
 }
 .download .wrapper {
   width: 90%;
@@ -316,13 +320,38 @@
   padding: 30px;
   margin-top: 70px;
 }
+@media (min-width: 850px) {
+  .download .wrapper {
+    height: 300px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+  }
+}
+@media (min-width: 1170px) {
+  .download .wrapper {
+    width: 1170px;
+  }
+}
 .download .wrapper .dl {
   width: 100px;
+}
+@media (min-width: 850px) {
+  .download .wrapper .dl {
+    position: absolute;
+    right: 60px;
+    top: 75px;
+  }
 }
 .download .wrapper .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 850px) {
+  .download .wrapper .contact {
+    align-self: center;
+  }
 }
 .download .wrapper .contact .title {
   font-size: 24px;
@@ -335,10 +364,15 @@
   text-align: center;
 }
 .download .wrapper .contact .form {
-  margin: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 850px) {
+  .download .wrapper .contact .form {
+    display: block;
+    direction: rtl;
+  }
 }
 .download .wrapper .contact .form input {
   width: 290px;
@@ -349,27 +383,37 @@
   font-size: 24px;
   color: #616161;
   padding: 10px;
+  margin-top: 24px;
 }
 .download .wrapper .contact .form input:focus {
   outline: none;
 }
-.download .wrapper .contact .form button {
+.download .wrapper .contact .form .btn-orange {
   width: 140px;
   height: 50px;
   border-radius: 25px;
   margin-top: 21px;
+  margin-bottom: 40px;
 }
-.download .wrapper .dl-ways {
+@media (min-width: 850px) {
+  .download .wrapper .contact .form .btn-orange {
+    position: relative;
+    right: -55px;
+    top: 9px;
+  }
+}
+.download .wrapper .contact .greens {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.download .wrapper .dl-ways .text {
-  line-height: 1.5;
-  font-size: 16px;
-  text-align: center;
+@media (min-width: 850px) {
+  .download .wrapper .contact .greens {
+    flex-direction: row;
+    position: relative;
+    bottom: -33px;
+  }
 }
-.download .wrapper .dl-ways button {
+.download .wrapper .contact .greens .btn-green {
   margin: 15px;
 }
 
