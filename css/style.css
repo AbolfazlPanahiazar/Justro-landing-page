@@ -423,6 +423,12 @@
   background: url(../images/023_amadegisafar.jpg), linear-gradient(to top, #00a680, #00a680);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .trip {
+    height: 300px;
+  }
 }
 .trip .wrapper {
   display: flex;
@@ -432,11 +438,43 @@
 }
 .trip .wrapper .title {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .trip .wrapper .texts {
   text-align: justify;
   direction: rtl;
+  max-width: 900px;
+  font-size: 16px;
+}
+.trip .wrapper button {
+  margin-top: 30px;
+  width: 160px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+@media (min-width: 900px) {
+  .trip .wrapper button {
+    position: absolute;
+    bottom: -25px;
+  }
+}
+
+.idea {
+  padding: 30px;
+  margin-top: 75px;
+  flex-direction: column;
+  align-items: center;
+}
+.idea .title {
+  font-size: 24px;
+  color: #00a680;
+  margin: 18px;
+}
+.idea .text {
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: center;
   max-width: 900px;
 }
 

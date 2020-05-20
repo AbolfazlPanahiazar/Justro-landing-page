@@ -314,6 +314,10 @@
   background: url(../images/023_amadegisafar.jpg), linear-gradient(to top, $c-primary, $c-primary);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  @media (min-width: 900px) {
+    height: 300px;
+  }
 
   .wrapper {
     display: flex;
@@ -323,13 +327,46 @@
 
     .title {
       font-size: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .texts {
       text-align: justify;
       direction: rtl;
       max-width: 900px;
+      font-size: 16px;
     }
+
+    button {
+      margin-top: 30px;
+      width: 160px;
+      height: 50px;
+      font-size: 16px;
+      border-radius: 25px;
+      @media (min-width: 900px) {
+        position: absolute;
+        bottom: -25px;
+      }
+    }
+  }
+}
+
+// idea section
+.idea {
+  padding: 30px;
+  margin-top: 75px;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-size: 24px;
+    color: $c-primary;
+    margin: 18px;
+  }
+
+  .text {
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    max-width: 900px;
   }
 }
