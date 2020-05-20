@@ -177,6 +177,7 @@
 
 .car1 {
   min-height: 600px;
+  direction: rtl;
 }
 @media (min-width: 450px) {
   .car1 {
@@ -415,6 +416,25 @@
 }
 .download .wrapper .contact .greens .btn-green {
   margin: 15px;
+}
+
+.trip {
+  margin-top: 50px;
+  background: url(../images/023_amadegisafar.jpg);
+  background-image: url(../images/022_bg_amadegisafar.svg) 0.3;
+}
+.trip .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.trip .wrapper .title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.trip .wrapper .texts {
+  text-align: justify;
 }
 
 .hamburgur-menu {
