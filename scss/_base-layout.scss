@@ -375,6 +375,7 @@
 .gallery {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 
   .wrapper {
     overflow: auto;
@@ -393,7 +394,7 @@
       overflow: hidden;
       position: relative;
       background-size: cover;
-      &:hover .sub-text{
+      &:hover .sub-text {
         bottom: 0;
       }
 
@@ -428,6 +429,123 @@
       &-5 {
         background-image: url(../images/pool.jpg);
       }
+    }
+  }
+}
+
+// footer mobile
+footer.mobile {
+  height: 558px;
+  background-color: $c-secondary;
+
+  .top {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text {
+      width: 250px;
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    input {
+      width: 320px;
+      height: 50px;
+      border-radius: 25px;
+      border: solid 1px #eeeeee;
+      background-color: #fafafa;
+      font-size: 16px;
+      text-align: center;
+      color: #9e9e9e;
+      padding: 10px;
+      margin-top: 36px;
+      margin-bottom: 30px;
+      &::placeholder {
+        color: #9e9e9e;
+      }
+    }
+  }
+
+  .bottom {
+    height: 383px;
+    background-image: url(../images/025_footer_Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .icons {
+      position: absolute;
+      top: 150px;
+      display: flex;
+
+      .telegram,
+      .twitter {
+        background-color: #29b6f6;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        font-size: 40px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 31px;
+      }
+
+      .instagram {
+        background-color: #ec407a;
+        width: 64px;
+        height: 64px;
+        font-size: 40px;
+        color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .links {
+      position: absolute;
+      top: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      div {
+        width: 120px;
+        padding: 10px;
+        text-align: center;
+        font-size: 13px;
+        color: #ffffff;
+      }
+    }
+
+    .contact {
+      position: absolute;
+      top: 300px;
+      display: flex;
+      justify-content: center;
+      color: #ffffff;
+
+      .tel,
+      .mail {
+        padding: 0 30px;
+      }
+    }
+
+    img {
+      width: 72px;
+      position: absolute;
+      bottom: -33px;
     }
   }
 }
