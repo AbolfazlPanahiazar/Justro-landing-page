@@ -1,35 +1,22 @@
-.container-fluid {
-  font-family: $shabnam;
-  padding-left: 0;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.nav-row1 {
-  display: flex;
-  justify-content: flex-end;
+.container-fluid {
+  font-family: $shabnam;
+}
 
+/****************** Mobile navbar ******************/
+.mobile-nav-row {
   .navbar {
     height: 80px;
-    background-color: #ffffff;
     box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
     z-index: 2;
-    direction: rtl;
-    position: relative;
-
-    .hamburgur {
-      margin-right: 10px;
-    }
 
     .title {
-      font-size: 24px;
-      color: $c-primary;
-      position: absolute;
-      right: 95px;
-    }
-
-    .search {
-      color: $c-primary;
-      font-size: 24px;
-      margin-left: 23px;
+      right: 85px;
     }
   }
 
@@ -39,159 +26,107 @@
     background-image: url(../images/009_logo_Bg.svg);
     background-position: bottom left;
     background-size: cover;
-    direction: rtl;
     background-repeat: no-repeat;
-    @include flex-center;
 
     .icon {
-      @include flex-center;
-      margin-right: 16%;
-
-      img {
-        width: 72px;
-      }
-    }
-
-    .title {
-      @include flex-center;
-      font-size: 24px;
-      color: $c-primary;
-      margin-right: 3%;
+      width: 72px;
     }
   }
 }
 
-// carousel
-.car1 {
-  min-height: 600px;
-  direction: rtl;
-
-  @media (min-width: 450px) {
-    height: 630px;
-  }
-  @media (min-width: 550px) {
-    height: 700px;
-  }
-  @media (min-width: 650px) {
-    height: 750px;
-  }
-}
-
-.car2 {
-  min-height: 490px;
-  margin-bottom: 80px;
-}
-
-// main wave
-.main-wave {
-  height: 200px;
-  background-image: url(../images/011_bg_wave.svg);
+/****************** Desktop navbar ******************/
+.desktop-nav-row {
+  background-image: url(../images/010_header_wave.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-}
+  background-size: 20%;
 
-// ads section
-.ad-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .logo {
+    width: 406px;
+    height: 219px;
+    background-image: url(../images/009_logo_Bg.svg);
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  @media (min-width: 992px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .icon {
+      width: 72px;
+    }
   }
 
+  nav {
+    button {
+      width: 120px;
+      height: 45px;
+    }
+  }
+}
+
+/****************** Main wave ******************/
+.main-wave {
+  height: 270px;
+  background-image: url(../images/011_bg_wave.svg);
+  @include back-img;
+  animation: vawe 8s ease-in-out 0s infinite normal;
+}
+@keyframes vawe {
+  0% {
+    background-position: -350px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -350px 0;
+  }
+}
+
+/****************** Main wave ******************/
+.ad-section {
   .circles {
     height: 95px;
     direction: rtl;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
-    padding: 0 20px;
-    margin: 0 auto;
-
-    @media (min-width: 580px) {
-      display: flex;
-      justify-content: center;
-    }
-
     @media (min-width: 768px) {
       height: auto;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       background-image: url(../images/aaaa.png);
-      background-size: contain;
-      background-position: center center;
+      @include back-img;
     }
-
     .circle {
-      display: inline-block;
-      text-align: center;
       padding: 15px;
-      font-size: 40px;
-      min-width: 72px;
+      width: 72px;
       height: 72px;
       margin: 8px;
       border: 1px solid $c-primary;
       border-radius: 50%;
-      color: $c-primary;
-      position: relative;
-      background-color: #ffffff;
-
-      @media (min-width: 768px) {
-        display: block;
-        margin: 20px auto;
-      }
-
-      &.icon-icon_fly {
+      &:hover {
         background: linear-gradient(to top, #f46739, #ff9f81);
         color: #ffffff;
         border: none;
       }
     }
   }
-
   .phone {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
     @media (min-width: 1200px) {
       img {
         width: 350px;
       }
     }
   }
-
   .texts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
     direction: rtl;
-    text-align: center;
-
     @media (min-width: 768px) {
       height: 550px;
     }
-
-    .title {
-      color: $c-primary;
-      font-size: 28px;
+    @media (max-width: 576px) {
+      order: 3;
     }
 
-    .paragraph {
-      text-align: justify;
-      margin-top: 25px;
-    }
   }
 }
 
-// download section
+/****************** Download ******************/
 .download {
   @media (min-width: 850px) {
     background-image: url(../images/019_dlbox_Bg.jpg);
@@ -448,6 +383,9 @@ footer.mobile {
       width: 250px;
       text-align: center;
       margin-top: 36px;
+      @media (min-width: 768px) {
+        width: 100%;
+      }
     }
 
     input {
@@ -473,7 +411,7 @@ footer.mobile {
     background-image: url(../images/025_footer_Bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 60% 1%;
+    background-position: center center;
     position: relative;
     display: flex;
     flex-direction: column;
