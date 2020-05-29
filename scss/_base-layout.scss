@@ -4,6 +4,10 @@ body {
   height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container-fluid {
   font-family: $shabnam;
 }
@@ -70,13 +74,13 @@ body {
 }
 @keyframes vawe {
   0% {
-    background-position: -350px 0;
+    background-position: -50px 0;
   }
   50% {
     background-position: 0 0;
   }
   100% {
-    background-position: -350px 0;
+    background-position: -50px 0;
   }
 }
 
@@ -90,6 +94,7 @@ body {
     white-space: nowrap;
     @media (min-width: 768px) {
       height: auto;
+      overflow-x: hidden;
       background-image: url(../images/aaaa.png);
       @include back-img;
     }
@@ -122,7 +127,6 @@ body {
     @media (max-width: 576px) {
       order: 3;
     }
-
   }
 }
 
@@ -130,70 +134,26 @@ body {
 .download {
   @media (min-width: 850px) {
     background-image: url(../images/019_dlbox_Bg.jpg);
-    background-size: cover;
-    background-position: center center;
+    @include back-img;
   }
-
   .wrapper {
-    width: 90%;
     box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    margin-top: 70px;
-
+    border-radius: 15px;
     @media (min-width: 850px) {
       height: 300px;
-      flex-direction: row-reverse;
-      justify-content: center;
-      position: relative;
     }
-
-    @media (min-width: 1170px) {
-      width: 1170px;
-    }
-
     .dl {
       width: 100px;
-
-      @media (min-width: 850px) {
-        position: absolute;
+      @media (min-width: 992px) {
         right: 60px;
         top: 75px;
       }
     }
-
     .contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @media (min-width: 850px) {
-        align-self: center;
-      }
-      .title {
-        font-size: 24px;
-        color: $c-primary;
-        margin: 18px;
-      }
-
-      .text {
-        line-height: 1.5;
-        font-size: 16px;
-        text-align: center;
-      }
-
       .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media (min-width: 850px) {
-          display: block;
+        @media (min-width: 992px) {
           direction: rtl;
         }
-
         input {
           width: 290px;
           height: 50px;
@@ -202,83 +162,48 @@ body {
           background-color: #fafafa;
           font-size: 24px;
           color: #616161;
-          padding: 10px;
-          margin-top: 24px;
-
           &:focus {
             outline: none;
           }
         }
-
         .btn-orange {
           width: 140px;
           height: 50px;
           border-radius: 25px;
           margin-top: 21px;
           margin-bottom: 40px;
-
-          @media (min-width: 850px) {
+          @media (min-width: 992px) {
             position: relative;
             right: -55px;
             top: 9px;
           }
         }
       }
-
       .greens {
-        display: flex;
-        flex-direction: column;
-
-        @media (min-width: 850px) {
-          flex-direction: row;
+        @media (min-width: 992px) {
           position: relative;
           bottom: -33px;
-        }
-
-        .btn-green {
-          margin: 15px;
         }
       }
     }
   }
 }
 
-// trip section
+/****************** Trip ******************/
 .trip {
-  margin-top: 70px;
-  background: url(../images/023_amadegisafar.jpg), linear-gradient(to top, $c-primary, $c-primary);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/022_bg_amadegisafar.svg);
+  @include back-img;
   position: relative;
-  @media (min-width: 900px) {
-    height: 300px;
-  }
-
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-
-    .title {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
     .texts {
-      text-align: justify;
       direction: rtl;
       max-width: 900px;
-      font-size: 16px;
     }
-
     button {
-      margin-top: 30px;
       width: 160px;
       height: 50px;
-      font-size: 16px;
       border-radius: 25px;
-      @media (min-width: 900px) {
+      @media (min-width: 992px) {
         position: absolute;
         bottom: -25px;
       }
@@ -286,93 +211,70 @@ body {
   }
 }
 
-// idea section
+/****************** Idea ******************/
 .idea {
-  padding: 30px;
-  margin-top: 75px;
-  flex-direction: column;
-  align-items: center;
-  .title {
-    font-size: 24px;
-    color: $c-primary;
-    margin: 18px;
-  }
-
   .text {
-    line-height: 1.5;
-    font-size: 16px;
-    text-align: center;
     max-width: 900px;
   }
 }
 
-// gallery section
+/****************** Gallery ******************/
 .gallery {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-
   .wrapper {
     overflow: auto;
     white-space: nowrap;
-    padding: 30px;
     direction: rtl;
     max-width: 1200px;
-
     .g-item {
-      display: inline-block;
-      text-align: center;
       width: 210px;
       height: 150px;
       border-radius: 10px;
-      margin: 6px;
-      overflow: hidden;
       position: relative;
-      background-size: cover;
+      @include back-img;
       &:hover .sub-text {
         bottom: 0;
       }
-
       .sub-text {
         font-size: 18px;
         opacity: 0.6;
-        background-color: #000000;
         height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 0 0 10px 10px;
         position: absolute;
         bottom: -50px;
         width: 100%;
         transition: all 0.3s;
+        @media (max-width: 992px) {
+          bottom: 0;
+        }
       }
-
       &-1 {
         background-image: url(../images/book.jpg);
+        @include back-img;
       }
       &-2 {
         background-image: url(../images/mountains.jpg);
-        background-size: cover;
+        @include back-img;
       }
       &-3 {
         background-image: url(../images/history.jpg);
+        @include back-img;
       }
       &-4 {
         background-image: url(../images/mosque.jpg);
+        @include back-img;
       }
       &-5 {
         background-image: url(../images/pool.jpg);
+        @include back-img;
       }
     }
   }
 }
 
-// footer mobile
+/****************** Mobile footer ******************/
 footer.mobile {
   height: 558px;
   background-color: $c-secondary;
-
   .top {
     height: 200px;
     display: flex;

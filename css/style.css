@@ -39,6 +39,10 @@ body {
   height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container-fluid {
   font-family: "Shabnam", sans-serif;
 }
@@ -98,13 +102,13 @@ body {
 
 @keyframes vawe {
   0% {
-    background-position: -350px 0;
+    background-position: -50px 0;
   }
   50% {
     background-position: 0 0;
   }
   100% {
-    background-position: -350px 0;
+    background-position: -50px 0;
   }
 }
 /****************** Main wave ******************/
@@ -118,6 +122,7 @@ body {
 @media (min-width: 768px) {
   .ad-section .circles {
     height: auto;
+    overflow-x: hidden;
     background-image: url(../images/aaaa.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,69 +166,30 @@ body {
   .download {
     background-image: url(../images/019_dlbox_Bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
   }
 }
 .download .wrapper {
-  width: 90%;
   box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  margin-top: 70px;
+  border-radius: 15px;
 }
 @media (min-width: 850px) {
   .download .wrapper {
     height: 300px;
-    flex-direction: row-reverse;
-    justify-content: center;
-    position: relative;
-  }
-}
-@media (min-width: 1170px) {
-  .download .wrapper {
-    width: 1170px;
   }
 }
 .download .wrapper .dl {
   width: 100px;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   .download .wrapper .dl {
-    position: absolute;
     right: 60px;
     top: 75px;
   }
 }
-.download .wrapper .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 850px) {
-  .download .wrapper .contact {
-    align-self: center;
-  }
-}
-.download .wrapper .contact .title {
-  font-size: 24px;
-  color: #00a680;
-  margin: 18px;
-}
-.download .wrapper .contact .text {
-  line-height: 1.5;
-  font-size: 16px;
-  text-align: center;
-}
-.download .wrapper .contact .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   .download .wrapper .contact .form {
-    display: block;
     direction: rtl;
   }
 }
@@ -235,8 +201,6 @@ body {
   background-color: #fafafa;
   font-size: 24px;
   color: #616161;
-  padding: 10px;
-  margin-top: 24px;
 }
 .download .wrapper .contact .form input:focus {
   outline: none;
@@ -248,110 +212,64 @@ body {
   margin-top: 21px;
   margin-bottom: 40px;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   .download .wrapper .contact .form .btn-orange {
     position: relative;
     right: -55px;
     top: 9px;
   }
 }
-.download .wrapper .contact .greens {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   .download .wrapper .contact .greens {
-    flex-direction: row;
     position: relative;
     bottom: -33px;
   }
 }
-.download .wrapper .contact .greens .btn-green {
-  margin: 15px;
-}
 
+/****************** Trip ******************/
 .trip {
-  margin-top: 70px;
-  background: url(../images/023_amadegisafar.jpg), linear-gradient(to top, #00a680, #00a680);
-  background-repeat: no-repeat;
+  background: url(../images/022_bg_amadegisafar.svg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
 }
-@media (min-width: 900px) {
-  .trip {
-    height: 300px;
-  }
-}
-.trip .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-}
-.trip .wrapper .title {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
 .trip .wrapper .texts {
-  text-align: justify;
   direction: rtl;
   max-width: 900px;
-  font-size: 16px;
 }
 .trip .wrapper button {
-  margin-top: 30px;
   width: 160px;
   height: 50px;
-  font-size: 16px;
   border-radius: 25px;
 }
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .trip .wrapper button {
     position: absolute;
     bottom: -25px;
   }
 }
 
-.idea {
-  padding: 30px;
-  margin-top: 75px;
-  flex-direction: column;
-  align-items: center;
-}
-.idea .title {
-  font-size: 24px;
-  color: #00a680;
-  margin: 18px;
-}
+/****************** Idea ******************/
 .idea .text {
-  line-height: 1.5;
-  font-size: 16px;
-  text-align: center;
   max-width: 900px;
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
+/****************** Gallery ******************/
 .gallery .wrapper {
   overflow: auto;
   white-space: nowrap;
-  padding: 30px;
   direction: rtl;
   max-width: 1200px;
 }
 .gallery .wrapper .g-item {
-  display: inline-block;
-  text-align: center;
   width: 210px;
   height: 150px;
   border-radius: 10px;
-  margin: 6px;
-  overflow: hidden;
   position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .gallery .wrapper .g-item:hover .sub-text {
   bottom: 0;
@@ -359,34 +277,50 @@ body {
 .gallery .wrapper .g-item .sub-text {
   font-size: 18px;
   opacity: 0.6;
-  background-color: #000000;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 0 0 10px 10px;
   position: absolute;
   bottom: -50px;
   width: 100%;
   transition: all 0.3s;
 }
+@media (max-width: 992px) {
+  .gallery .wrapper .g-item .sub-text {
+    bottom: 0;
+  }
+}
 .gallery .wrapper .g-item-1 {
   background-image: url(../images/book.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .gallery .wrapper .g-item-2 {
   background-image: url(../images/mountains.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .gallery .wrapper .g-item-3 {
   background-image: url(../images/history.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .gallery .wrapper .g-item-4 {
   background-image: url(../images/mosque.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .gallery .wrapper .g-item-5 {
   background-image: url(../images/pool.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
+/****************** Mobile footer ******************/
 footer.mobile {
   height: 558px;
   background-color: #cdfff4;
