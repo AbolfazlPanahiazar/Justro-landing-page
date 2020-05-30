@@ -277,18 +277,6 @@ footer.mobile {
   background-color: $c-secondary;
   .top {
     height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .text {
-      width: 250px;
-      text-align: center;
-      margin-top: 36px;
-      @media (min-width: 768px) {
-        width: 100%;
-      }
-    }
 
     input {
       width: 320px;
@@ -296,35 +284,20 @@ footer.mobile {
       border-radius: 25px;
       border: solid 1px #eeeeee;
       background-color: #fafafa;
-      font-size: 16px;
-      text-align: center;
       color: #9e9e9e;
-      padding: 10px;
-      margin-top: 36px;
-      margin-bottom: 30px;
       &::placeholder {
         color: #9e9e9e;
       }
     }
   }
-
   .bottom {
     height: 383px;
     background-image: url(../images/025_footer_Bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    @include back-img;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-
     .icons {
       position: absolute;
       top: 150px;
-      display: flex;
-
       .telegram,
       .twitter {
         background-color: #29b6f6;
@@ -333,12 +306,9 @@ footer.mobile {
         border-radius: 50%;
         font-size: 40px;
         color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         margin: auto 31px;
       }
-
       .instagram {
         background-color: #ec407a;
         width: 64px;
@@ -346,20 +316,14 @@ footer.mobile {
         font-size: 40px;
         color: #ffffff;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
       }
     }
-
     .links {
       position: absolute;
       top: 220px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       flex-wrap: wrap;
-
       div {
         width: 120px;
         padding: 10px;
@@ -368,20 +332,23 @@ footer.mobile {
         color: #ffffff;
       }
     }
-
     .contact {
       position: absolute;
       top: 300px;
       display: flex;
       justify-content: center;
       color: #ffffff;
-
+      @media (max-width: 352px) {
+        top: 325px;
+      }
       .tel,
       .mail {
-        padding: 0 30px;
+        padding: 0 25px;
+        @media (max-width: 352px) {
+          padding: 0 10px;
+        }
       }
     }
-
     img {
       width: 72px;
       position: absolute;
