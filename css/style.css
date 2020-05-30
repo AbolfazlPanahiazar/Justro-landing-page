@@ -228,7 +228,7 @@ body {
 
 /****************** Trip ******************/
 .trip {
-  background: url(../images/022_bg_amadegisafar.svg);
+  background: url(../images/bg-amadegi-safar.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -464,8 +464,6 @@ footer.desktop .bottom .brand {
 }
 footer.desktop .bottom .brand img {
   width: 72px;
-  position: relative;
-  top: -20px;
 }
 footer.desktop .bottom .links {
   height: 150px;

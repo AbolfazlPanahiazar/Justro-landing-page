@@ -191,7 +191,7 @@ body {
 
 /****************** Trip ******************/
 .trip {
-  background: url(../images/022_bg_amadegisafar.svg);
+  background: url(../images/bg-amadegi-safar.jpg);
   @include back-img;
   position: relative;
   .wrapper {
@@ -397,8 +397,6 @@ footer.desktop {
       font-size: 13px;
       img {
         width: 72px;
-        position: relative;
-        top: -20px;
       }
     }
     .links {
