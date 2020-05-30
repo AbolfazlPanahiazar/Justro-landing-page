@@ -418,6 +418,88 @@ footer.mobile .bottom img {
   bottom: -33px;
 }
 
+/****************** Mobile footer ******************/
+footer.desktop .top {
+  background-image: url(../images/024_footer_wave.png);
+  background-repeat: no-repeat;
+  background-position: 940px 20%;
+}
+footer.desktop .top input {
+  width: 320px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #eeeeee;
+  background-color: #fafafa;
+  color: #9e9e9e;
+}
+footer.desktop .top input::placeholder {
+  color: #9e9e9e;
+}
+footer.desktop .top button {
+  width: 140px;
+  height: 50px;
+  position: relative;
+  right: -50px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+footer.desktop .bottom {
+  height: 280px;
+  background-image: url(../images/025_footer_Bg.svg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center bottom;
+}
+footer.desktop .bottom .brand {
+  height: 110px;
+  background-image: url(../images/026_footer_c.right_bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-position: bottom;
+  font-size: 13px;
+}
+footer.desktop .bottom .brand img {
+  width: 72px;
+  position: relative;
+  top: -20px;
+}
+footer.desktop .bottom .links {
+  height: 150px;
+  font-size: 13px;
+}
+footer.desktop .bottom .links .link {
+  cursor: pointer;
+}
+footer.desktop .bottom .contact .icons .telegram,
+footer.desktop .bottom .contact .icons .twitter {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0 rgba(0, 88, 67, 0.17);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #29b6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer.desktop .bottom .contact .icons .instagram {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0 rgba(0, 88, 67, 0.17);
+  width: 64px;
+  height: 64px;
+  font-size: 40px;
+  color: #ec407a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hamburgur-menu {
   top: 80px;
   right: -120vw;

@@ -277,7 +277,6 @@ footer.mobile {
   background-color: $c-secondary;
   .top {
     height: 200px;
-
     input {
       width: 320px;
       height: 50px;
@@ -353,6 +352,86 @@ footer.mobile {
       width: 72px;
       position: absolute;
       bottom: -33px;
+    }
+  }
+}
+
+/****************** Mobile footer ******************/
+footer.desktop {
+  .top {
+    background-image: url(../images/024_footer_wave.png);
+    background-repeat: no-repeat;
+    background-position: 940px 20%;
+    input {
+      width: 320px;
+      height: 50px;
+      border-radius: 25px;
+      border: solid 1px #eeeeee;
+      background-color: #fafafa;
+      color: #9e9e9e;
+      &::placeholder {
+        color: #9e9e9e;
+      }
+    }
+    button {
+      width: 140px;
+      height: 50px;
+      position: relative;
+      right: -50px;
+      border-radius: 25px;
+      font-size: 18px;
+    }
+  }
+  .bottom {
+    height: 280px;
+    background-image: url(../images/025_footer_Bg.svg);
+    position: relative;
+    @include back-img;
+    background-position: center bottom;
+    .brand {
+      height: 110px;
+      background-image: url(../images/026_footer_c.right_bg.svg);
+      @include back-img;
+      background-size: contain;
+      background-position: bottom;
+      font-size: 13px;
+      img {
+        width: 72px;
+        position: relative;
+        top: -20px;
+      }
+    }
+    .links {
+      height: 150px;
+      font-size: 13px;
+      .link {
+        cursor: pointer;
+      }
+    }
+    .contact {
+      .icons {
+        .telegram,
+        .twitter {
+          background-color: #ffffff;
+          box-shadow: 0px 2px 5px 0 rgba(0, 88, 67, 0.17);
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          font-size: 40px;
+          color: #29b6f6;
+          @include flex-center;
+        }
+        .instagram {
+          background-color: #ffffff;
+          box-shadow: 0px 2px 5px 0 rgba(0, 88, 67, 0.17);
+          width: 64px;
+          height: 64px;
+          font-size: 40px;
+          color: #ec407a;
+          border-radius: 50%;
+          @include flex-center;
+        }
+      }
     }
   }
 }
