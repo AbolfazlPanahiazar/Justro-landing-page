@@ -1,54 +1,39 @@
 .hamburgur-menu {
-  background-color: rgba($c-primary, $alpha: 0.5);
-  position: fixed;
   top: 80px;
   right: -120vw;
   transition: right ease-in-out 0.3s;
 
-  &-link {
-    color: $c-tertiary;
+  button {
+    width: 120px;
+    height: 40px;
   }
 }
 
 .search-box {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: rgba($c-primary, $alpha: 0.5);
-  position: fixed;
   top: 80px;
   left: -120vw;
   transition: left ease-in-out 0.3s;
 
-  input {
-    width: 80%;
-    font-size: 25px;
-    direction: rtl;
-    border: none;
-
-    &::placeholder {
-      color: rgba($c-tertiary, $alpha: 0.3);
-    }
+  input::placeholder {
+    color: rgba($c-tertiary, $alpha: 0.3);
+    font-size: 16px;
+    text-align: right;
   }
 }
 
 .hamburgur-checkbox:checked ~ .hamburgur-menu {
   right: 0;
 }
-
 .search-checkbox:checked ~ .search-box {
   left: 0;
 }
-
 .hamburgur-checkbox:checked ~ .hamburgur .menu-line-1 {
   transform: rotateZ(-40deg);
 }
-
 .hamburgur-checkbox:checked ~ .hamburgur .menu-line-2 {
   opacity: 0;
   transform: translateX(-30px);
 }
-
 .hamburgur-checkbox:checked ~ .hamburgur .menu-line-3 {
   transform: rotateZ(40deg);
 }

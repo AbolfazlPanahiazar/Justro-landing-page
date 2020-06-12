@@ -1,0 +1,435 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  font-family: $shabnam;
+}
+
+/****************** Mobile navbar ******************/
+.mobile-nav-row {
+  .navbar {
+    height: 80px;
+    box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
+    z-index: 2;
+
+    .title {
+      right: 85px;
+    }
+  }
+
+  .logo {
+    width: 237px;
+    height: 192px;
+    background-image: url(../images/009_logo_Bg.svg);
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .icon {
+      width: 72px;
+    }
+  }
+}
+
+/****************** Desktop navbar ******************/
+.desktop-nav-row {
+  background-image: url(../images/010_header_wave.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+
+  .logo {
+    width: 406px;
+    height: 219px;
+    background-image: url(../images/009_logo_Bg.svg);
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .icon {
+      width: 72px;
+    }
+  }
+
+  nav {
+    button {
+      width: 120px;
+      height: 45px;
+    }
+  }
+}
+
+/****************** Main wave ******************/
+.main-wave {
+  height: 270px;
+  background-image: url(../images/011_bg_wave.svg);
+  @include back-img;
+  animation: vawe 8s ease-in-out 0s infinite normal;
+}
+@keyframes vawe {
+  0% {
+    background-position: -50px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -50px 0;
+  }
+}
+
+/****************** Main wave ******************/
+.ad-section {
+  .circles {
+    height: 95px;
+    direction: rtl;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    @media (min-width: 768px) {
+      height: auto;
+      overflow-x: hidden;
+      background-image: url(../images/aaaa.png);
+      @include back-img;
+    }
+    .circle {
+      padding: 15px;
+      width: 72px;
+      height: 72px;
+      margin: 8px;
+      border: 1px solid $c-primary;
+      border-radius: 50%;
+      &:hover {
+        background: linear-gradient(to top, #f46739, #ff9f81);
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+  .phone {
+    @media (min-width: 1200px) {
+      img {
+        width: 350px;
+      }
+    }
+  }
+  .texts {
+    direction: rtl;
+    @media (min-width: 768px) {
+      height: 550px;
+    }
+    @media (max-width: 576px) {
+      order: 3;
+    }
+  }
+}
+
+/****************** Download ******************/
+.download {
+  @media (min-width: 850px) {
+    background-image: url(../images/019_dlbox_Bg.jpg);
+    @include back-img;
+  }
+  .wrapper {
+    box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+    border-radius: 15px;
+    @media (min-width: 850px) {
+      height: 300px;
+    }
+    .dl {
+      width: 100px;
+      @media (min-width: 992px) {
+        right: 60px;
+        top: 75px;
+      }
+    }
+    .contact {
+      .form {
+        @media (min-width: 992px) {
+          direction: rtl;
+        }
+        input {
+          width: 290px;
+          height: 50px;
+          border-radius: 25px;
+          border: solid 1px #eeeeee;
+          background-color: #fafafa;
+          font-size: 24px;
+          color: #616161;
+          &:focus {
+            outline: none;
+          }
+        }
+        .btn-orange {
+          width: 140px;
+          height: 50px;
+          border-radius: 25px;
+          margin-top: 21px;
+          margin-bottom: 40px;
+          @media (min-width: 992px) {
+            position: relative;
+            right: -55px;
+            top: 9px;
+          }
+        }
+      }
+      .greens {
+        @media (min-width: 992px) {
+          position: relative;
+          bottom: -33px;
+        }
+      }
+    }
+  }
+}
+
+/****************** Trip ******************/
+.trip {
+  background: url(../images/bg-amadegi-safar.jpg);
+  @include back-img;
+  position: relative;
+  .wrapper {
+    .texts {
+      direction: rtl;
+      max-width: 900px;
+    }
+    button {
+      width: 160px;
+      height: 50px;
+      border-radius: 25px;
+      @media (min-width: 992px) {
+        position: absolute;
+        bottom: -25px;
+      }
+    }
+  }
+}
+
+/****************** Idea ******************/
+.idea {
+  .text {
+    max-width: 900px;
+  }
+}
+
+/****************** Gallery ******************/
+.gallery {
+  .wrapper {
+    overflow: auto;
+    white-space: nowrap;
+    direction: rtl;
+    max-width: 1200px;
+    .g-item {
+      width: 210px;
+      height: 150px;
+      border-radius: 10px;
+      position: relative;
+      @include back-img;
+      &:hover .sub-text {
+        bottom: 0;
+      }
+      .sub-text {
+        font-size: 18px;
+        opacity: 0.6;
+        height: 50px;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        transition: all 0.3s;
+        @media (max-width: 992px) {
+          bottom: 0;
+        }
+      }
+      &-1 {
+        background-image: url(../images/book.jpg);
+        @include back-img;
+      }
+      &-2 {
+        background-image: url(../images/mountains.jpg);
+        @include back-img;
+      }
+      &-3 {
+        background-image: url(../images/history.jpg);
+        @include back-img;
+      }
+      &-4 {
+        background-image: url(../images/mosque.jpg);
+        @include back-img;
+      }
+      &-5 {
+        background-image: url(../images/pool.jpg);
+        @include back-img;
+      }
+    }
+  }
+}
+
+/****************** Mobile footer ******************/
+footer.mobile {
+  height: 558px;
+  background-color: $c-secondary;
+  .top {
+    height: 200px;
+    input {
+      width: 320px;
+      height: 50px;
+      border-radius: 25px;
+      border: solid 1px #eeeeee;
+      background-color: #fafafa;
+      color: #9e9e9e;
+      &::placeholder {
+        color: #9e9e9e;
+      }
+    }
+  }
+  .bottom {
+    height: 383px;
+    background-image: url(../images/025_footer_Bg.svg);
+    @include back-img;
+    position: relative;
+    .icons {
+      position: absolute;
+      top: 150px;
+      .telegram,
+      .twitter {
+        background-color: #29b6f6;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        font-size: 40px;
+        color: #ffffff;
+        @include flex-center;
+        margin: auto 31px;
+      }
+      .instagram {
+        background-color: #ec407a;
+        width: 64px;
+        height: 64px;
+        font-size: 40px;
+        color: #ffffff;
+        border-radius: 50%;
+        @include flex-center;
+      }
+    }
+    .links {
+      position: absolute;
+      top: 220px;
+      @include flex-center;
+      flex-wrap: wrap;
+      div {
+        width: 120px;
+        padding: 10px;
+        text-align: center;
+        font-size: 13px;
+        color: #ffffff;
+      }
+    }
+    .contact {
+      position: absolute;
+      top: 300px;
+      display: flex;
+      justify-content: center;
+      color: #ffffff;
+      @media (max-width: 352px) {
+        top: 325px;
+      }
+      .tel,
+      .mail {
+        padding: 0 25px;
+        @media (max-width: 352px) {
+          padding: 0 10px;
+        }
+      }
+    }
+    img {
+      width: 72px;
+      position: absolute;
+      bottom: -33px;
+    }
+  }
+}
+
+/****************** Mobile footer ******************/
+footer.desktop {
+  .top {
+    background-image: url(../images/024_footer_wave.png);
+    background-repeat: no-repeat;
+    background-position: 940px 20%;
+    input {
+      width: 320px;
+      height: 50px;
+      border-radius: 25px;
+      border: solid 1px #eeeeee;
+      background-color: #fafafa;
+      color: #9e9e9e;
+      &::placeholder {
+        color: #9e9e9e;
+      }
+    }
+    button {
+      width: 140px;
+      height: 50px;
+      position: relative;
+      right: -50px;
+      border-radius: 25px;
+      font-size: 18px;
+    }
+  }
+  .bottom {
+    height: 280px;
+    background-image: url(../images/025_footer_Bg.svg);
+    position: relative;
+    @include back-img;
+    background-position: center bottom;
+    .brand {
+      height: 110px;
+      background-image: url(../images/026_footer_c.right_bg.svg);
+      @include back-img;
+      background-size: contain;
+      background-position: bottom;
+      font-size: 13px;
+      img {
+        width: 72px;
+      }
+    }
+    .links {
+      height: 150px;
+      font-size: 13px;
+      .link {
+        cursor: pointer;
+      }
+    }
+    .contact {
+      .icons {
+        .telegram,
+        .twitter {
+          background-color: #ffffff;
+          box-shadow: 0px 2px 5px 0 rgba(0, 88, 67, 0.17);
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          font-size: 40px;
+          color: #29b6f6;
+          @include flex-center;
+        }
+        .instagram {
+          background-color: #ffffff;
+          box-shadow: 0px 2px 5px 0 rgba(0, 88, 67, 0.17);
+          width: 64px;
+          height: 64px;
+          font-size: 40px;
+          color: #ec407a;
+          border-radius: 50%;
+          @include flex-center;
+        }
+      }
+    }
+  }
+}

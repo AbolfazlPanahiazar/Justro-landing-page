@@ -17,5 +17,6 @@ $shabnam: "Shabnam", sans-serif;
 
 @mixin back-img {
   background-size: cover;
-  background-position: top center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
