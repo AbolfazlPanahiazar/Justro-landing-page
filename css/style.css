@@ -52,6 +52,7 @@ body {
   height: 80px;
   box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
   z-index: 2;
+  position: relative;
 }
 .mobile-nav-row .navbar .title {
   right: 85px;
